@@ -17,12 +17,12 @@
     var y=w.pageYOffset||d.documentElement.scrollTop;
     if(head)head.classList.toggle('compatto',y>40);
     if(bar){var h=d.documentElement.scrollHeight-w.innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(y/h,1):0)+')';}
-    if(hero&&!reduce&&y<w.innerHeight){hero.style.backgroundPosition='center calc(68% + '+(y*0.18)+'px)';}
+    if(hero&&!reduce&&w.innerWidth>760&&y<w.innerHeight){hero.style.backgroundPosition='center calc(68% + '+(y*0.18)+'px)';}
     tick=false;
   }
   w.addEventListener('scroll',function(){if(!tick){tick=true;w.requestAnimationFrame(onScroll);}},{passive:true});
   onScroll();
-  if(reduce||!('IntersectionObserver' in w)){d.documentElement.classList.remove('js');return;}
+  if(reduce||/noanim/.test(location.search)||!('IntersectionObserver' in w)){d.documentElement.classList.remove('js');return;}
   /* comparsa allo scroll */
   var sel='.sez .wrap>.eyebrow,.sez .wrap>h2,.sez .wrap>.intro,.sez .wrap>.testo,.sez .wrap>.lista,.sez .wrap>.tw,.sez .wrap>.ctas,.card,.passi li,.perche li,.split-t>div,.split-i,.gal img,details,.modulo,.lato,.faq-g>div:first-child,.band .wrap>*,.stats .wrap>div,.due-col>div';
   var els=[].slice.call(d.querySelectorAll(sel));
