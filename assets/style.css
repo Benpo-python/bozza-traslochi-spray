@@ -194,3 +194,19 @@ td:first-child{font-weight:600;color:var(--nero)}
 .sez .intro+.grid,.sez .intro+.passi{margin-top:32px}
 .card h3{font-size:1.1rem}
 @media(max-width:860px){.split.rev .split-i{order:0}}
+/* rifiniture allineamento */
+.testo>:first-child{margin-top:0}
+.due-col>.testo,.due-col>div{min-width:0}
+.modulo .btn-rosso{background:var(--nero);color:#fff}
+.modulo .btn-rosso:hover{background:#2A2D34}
+.scuro .ctas{margin-top:28px}
+.lato-l{list-style:none;margin-top:44px;border-top:1px solid rgba(255,255,255,.18)}
+.lato-l li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18);color:#D3D6DC;display:grid;grid-template-columns:130px 1fr;gap:12px}
+.lato-l b{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:#9EA3AD;font-weight:600;padding-top:3px}
+.lato-l a{color:#fff;text-decoration:none;font-weight:600}
+.lato-l a:hover{text-decoration:underline}
+.faq-g{display:grid;grid-template-columns:1fr 1.7fr;gap:72px;align-items:start}
+.faq-g details{max-width:none}
+.faq-g .sub{color:var(--grigio)}
+.faq-g>div:first-child{position:sticky;top:110px}
+@media(max-width:860px){.faq-g{grid-template-columns:1fr;gap:28px}.faq-g>div:first-child{position:static}.lato-l li{grid-template-columns:1fr;gap:2px}}
