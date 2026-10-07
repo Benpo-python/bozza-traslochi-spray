@@ -1,0 +1,3 @@
+# ANTEPRIMA: al lancio sostituire con le regole in 04-clienti/traslochi-spray-v2-LANCIO.md
+User-agent: *
+Disallow: /
