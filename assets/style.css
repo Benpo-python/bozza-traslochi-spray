@@ -277,3 +277,18 @@ details p{animation:apri .35s ease}
 }
 
 html:not(.js) .hero-t>*{opacity:1;transform:none;animation:none}
+/* recensioni e griglia a 4 */
+.c4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1060px){.c4{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.c4{grid-template-columns:1fr}}
+.rec-tot{margin:0 0 4px;color:var(--grigio)}
+.rec-tot b{color:var(--nero);font-size:1.15rem}
+.rec .card{margin:0;display:flex;flex-direction:column;gap:14px;background:#fff}
+.rec .card:hover{background:#fff}
+.stelle{color:#C98A00;font-size:1.15rem;letter-spacing:.15em;line-height:1}
+.rec blockquote{margin:0;flex:1}
+.rec blockquote p{color:#33363D;font-size:1rem;margin:0}
+.rec figcaption{border-top:1px solid var(--linea);padding-top:12px;display:flex;flex-direction:column}
+.rec figcaption b{color:var(--nero)}
+.rec figcaption span{font-size:.82rem;color:var(--grigio)}
+.rec-cta{margin-top:28px}
